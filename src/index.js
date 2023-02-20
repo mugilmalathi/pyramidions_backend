@@ -8,6 +8,8 @@ require('dotenv').config();
 const mongoose = require('mongoose')
 mongoose.connect(process.env.MONGODB_URL)
 
+app.use("/movies", require("./routes/movies.routes"))
+
 const PORT = process.env.PORT || 8081;
 
 app.listen(PORT, ()=>{
