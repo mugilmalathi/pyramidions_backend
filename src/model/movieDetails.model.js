@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const movieDetails = new mongoose.Schema(
   {
-    id: { type: Number },
+    id: { type: String },
     movieName: {
         type: String
     },
@@ -14,8 +14,7 @@ const movieDetails = new mongoose.Schema(
     },
     rating:{
         type: Number
-    },
-    
+    }
   },
   {
     versionKey: false,
