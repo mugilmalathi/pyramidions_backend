@@ -9,6 +9,7 @@ const mongoose = require('mongoose')
 mongoose.connect(process.env.MONGODB_URL)
 
 app.use("/movies", require("./routes/movies.routes"))
+app.use("/movies-details", require("./routes/movieDetails.routes"))
 
 const PORT = process.env.PORT || 8081;
 
