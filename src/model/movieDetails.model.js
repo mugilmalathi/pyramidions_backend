@@ -14,7 +14,8 @@ const movieDetails = new mongoose.Schema(
     },
     rating:{
         type: Number
-    }
+    },
+    
   },
   {
     versionKey: false,

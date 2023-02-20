@@ -18,6 +18,10 @@ const movieSchema = new mongoose.Schema(
     rating:{
         type: Number,
         required: [true, "ratings required"]
+    },
+    store:{
+        type: Boolean,
+        default: false
     }
   },
   {
